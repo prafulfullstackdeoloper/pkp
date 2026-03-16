@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TGS Projects Page - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00003d",
+                        "background-light": "#f5f5f8",
+                        "background-dark": "#0f0f23",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<!-- Navigation Header -->
+<nav class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:border-white/10 dark:bg-background-dark/80">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-primary dark:text-white">TGS</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-primary/80 hover:text-primary dark:text-slate-300 dark:hover:text-white" href="#">Home</a>
+<a class="text-sm font-semibold text-primary border-b-2 border-primary dark:text-white dark:border-white" href="#">Projects</a>
+<a class="text-sm font-semibold text-primary/80 hover:text-primary dark:text-slate-300 dark:hover:text-white" href="#">Studio</a>
+<a class="text-sm font-semibold text-primary/80 hover:text-primary dark:text-slate-300 dark:hover:text-white" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-primary hover:bg-primary/10 dark:text-slate-300">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-primary hover:bg-primary/10 md:hidden dark:text-slate-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Header -->
+<header class="relative overflow-hidden py-16 sm:py-24">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="relative z-10">
+<h2 class="text-4xl font-extrabold tracking-tight text-primary sm:text-6xl dark:text-white">
+                    Our Projects
+                </h2>
+<p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">
+                    Explore our diverse portfolio of digital experiences, from eco-friendly applications to high-performance fintech dashboards.
+                </p>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute -top-24 right-0 -z-10 h-64 w-64 rounded-full bg-primary/5 blur-3xl dark:bg-primary/20"></div>
+</header>
+<!-- Filters -->
+<section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
+<div class="flex flex-wrap items-center gap-2 border-b border-slate-200 pb-4 dark:border-slate-800">
+<button class="rounded-full bg-primary px-6 py-2 text-sm font-bold text-white transition-all">All</button>
+<button class="rounded-full bg-primary/5 px-6 py-2 text-sm font-medium text-primary hover:bg-primary/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10">Web</button>
+<button class="rounded-full bg-primary/5 px-6 py-2 text-sm font-medium text-primary hover:bg-primary/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10">Mobile</button>
+<button class="rounded-full bg-primary/5 px-6 py-2 text-sm font-medium text-primary hover:bg-primary/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10">Branding</button>
+<button class="rounded-full bg-primary/5 px-6 py-2 text-sm font-medium text-primary hover:bg-primary/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10">AI/ML</button>
+</div>
+</section>
+<!-- Portfolio Grid -->
+<main class="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Project Card 1 -->
+<article class="group relative flex flex-col items-start gap-4">
+<div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 transition-all group-hover:shadow-2xl dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern web application interface on a laptop screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrUwJg4KsZ5Pc53Lj-XHJBZtQAajr9VlizskqZBK4wG3MhJ2CznyO-_ftLK9oE0KrXyMYJh2r9C54wvrnoh2HTnC2E_drFO-gw5vigWBFS4KCdK6Wnnm1O55_ecbvUPZHTSjTuLd_pRu8pXNeQ5Y6kiXBBhvcFhniS3r9qGnhckrlUlIFqKu3VFU5XOJZjudPbhdZw1ciM5jamiSIhutrhtDW8QIRDzE3DOxiKzmwV7F2DSia8moguQvpCo6kr7UCnTkL5AZuZpUo");'>
+</div>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+</div>
+<div class="flex w-full flex-col">
+<div class="flex items-center gap-x-2 text-xs font-semibold uppercase tracking-wider text-primary/60 dark:text-slate-400">
+<span>React Native</span>
+<span class="h-1 w-1 rounded-full bg-primary/20 dark:bg-white/20"></span>
+<span>Firebase</span>
+</div>
+<h3 class="mt-2 text-xl font-bold leading-tight text-primary dark:text-white group-hover:text-primary/70 dark:group-hover:text-slate-300 transition-colors">
+                        Eco-Friendly App
+                    </h3>
+<p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        A sustainable living assistant helping users track their carbon footprint and find green local businesses.
+                    </p>
+<a class="mt-4 flex items-center gap-1 text-sm font-bold text-primary dark:text-slate-300" href="#">
+                        View Case Study
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 2 -->
+<article class="group relative flex flex-col items-start gap-4">
+<div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 transition-all group-hover:shadow-2xl dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Data visualization dashboard with dark theme" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCR1-241xxNCHoKd3Zij0m0ISUugO3GaCPcs6CQBg3JhgTW_C5YG69jsLGhgVr2WTOVlgkz807bwdNeV-AyBZF9DtgCcX6_73oBcDsKpbzC61OFN2vSqNJqo7oNZPe0hPBsox5O8Z9TRw_ypZpticVt_AaExVUFP40Pf2ohEQoWMfJ8JRMT-nTCfJSnMtF05uadUmg-ZsXBDVGtHHxZbo-rE7W49FHQoO8jIsxpUZFc8GN8GXjbFHsApEZ3gdnnu8mJqSdZngCCfno");'>
+</div>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+</div>
+<div class="flex w-full flex-col">
+<div class="flex items-center gap-x-2 text-xs font-semibold uppercase tracking-wider text-primary/60 dark:text-slate-400">
+<span>Vue.js</span>
+<span class="h-1 w-1 rounded-full bg-primary/20 dark:bg-white/20"></span>
+<span>D3.js</span>
+</div>
+<h3 class="mt-2 text-xl font-bold leading-tight text-primary dark:text-white group-hover:text-primary/70 transition-colors">
+                        Fintech Dashboard
+                    </h3>
+<p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        Real-time market analytics platform with advanced charting tools and automated portfolio management.
+                    </p>
+<a class="mt-4 flex items-center gap-1 text-sm font-bold text-primary dark:text-slate-300" href="#">
+                        View Case Study
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 3 -->
+<article class="group relative flex flex-col items-start gap-4">
+<div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 transition-all group-hover:shadow-2xl dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Medical professional using a digital health tablet" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcTL_zSna8g11g5ifqNPAmGuh3NZcGxjkAzYgYdrDT4eCMLdJqOqdDtf2CEIOell2xsYZa3i5dE7o3CPZZ8hFqQ26cFW53XDIv93UP_uEA_JPdJHeefLTY9IocwjgWsbvoeAOnZ_Y8pVZ0LftcyjQqtDixP0EqPG4oOqA0PlE74UDz770uwbJJqZHltPcrZqgFWuM5UjjVuji-cc_6UQCppnVm_Z3tuOLh5m3waQfMuuG65wt9eFuRUvzSY8hXWmB3FAGMz90wNls");'>
+</div>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+</div>
+<div class="flex w-full flex-col">
+<div class="flex items-center gap-x-2 text-xs font-semibold uppercase tracking-wider text-primary/60 dark:text-slate-400">
+<span>Flutter</span>
+<span class="h-1 w-1 rounded-full bg-primary/20 dark:bg-white/20"></span>
+<span>GraphQL</span>
+</div>
+<h3 class="mt-2 text-xl font-bold leading-tight text-primary dark:text-white group-hover:text-primary/70 transition-colors">
+                        Health Tracker
+                    </h3>
+<p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        A holistic wellness monitoring system integrating wearable data for predictive health insights.
+                    </p>
+<a class="mt-4 flex items-center gap-1 text-sm font-bold text-primary dark:text-slate-300" href="#">
+                        View Case Study
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 4 -->
+<article class="group relative flex flex-col items-start gap-4">
+<div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 transition-all group-hover:shadow-2xl dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern retail space with digital shopping screens" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDT-mRJ1MLzE_aQzGynO0dK6Uz_LSpt7WarO-uZgGjptf95mJ1K_3YVPNDukuNvhKILWK-gWtSVUSRcMrStWHBhPZspb9KgVcNl3vg4N-l3S07oNEtKCV2Sz1egd_bM8uKFXz3w_6Mkushs4Ze9V3Wqcn6eUVkwl9TLjFxH06fo5zxpqIn3-Bn1AUisX-Epoj5TgrGn-mLxr30eLxCRQBIEHQAr4xjUiGfestPCjdYJTRYLO8D8QXM5q8P6xgxcAB7t2tPsc4i4WxU");'>
+</div>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+</div>
+<div class="flex w-full flex-col">
+<div class="flex items-center gap-x-2 text-xs font-semibold uppercase tracking-wider text-primary/60 dark:text-slate-400">
+<span>Next.js</span>
+<span class="h-1 w-1 rounded-full bg-primary/20 dark:bg-white/20"></span>
+<span>Stripe</span>
+</div>
+<h3 class="mt-2 text-xl font-bold leading-tight text-primary dark:text-white group-hover:text-primary/70 transition-colors">
+                        E-commerce Platform
+                    </h3>
+<p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        A high-conversion headless commerce solution with ultra-fast performance and seamless checkout.
+                    </p>
+<a class="mt-4 flex items-center gap-1 text-sm font-bold text-primary dark:text-slate-300" href="#">
+                        View Case Study
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 5 -->
+<article class="group relative flex flex-col items-start gap-4">
+<div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 transition-all group-hover:shadow-2xl dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Abstract UI design with colorful gradients" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkKVQYsyg8qoTD5gIqCKJnCUODMZJph52OhK0eLusnZNPvA0MYljPKsnqTcQa4P-FEf2-j_kIvdxxABuBJX2qR3uAeiJgQXor7D7rydE3G4B79_qFUoyo9g2sptGEuBBH1VC0WN955ItRnUr5SokdtXKo3EeH96jFJjBCgrVv4C2gWbCFj3NZFUOGJ67KP-AcWyjVJs6zJGn3gJ7BhJF1RXht7tfkYF7NHyBB9R_SdqyPphSgZWbz8yum7T0VHb3tmOt_o4Lfq5D4");'>
+</div>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+</div>
+<div class="flex w-full flex-col">
+<div class="flex items-center gap-x-2 text-xs font-semibold uppercase tracking-wider text-primary/60 dark:text-slate-400">
+<span>Figma</span>
+<span class="h-1 w-1 rounded-full bg-primary/20 dark:bg-white/20"></span>
+<span>Brand System</span>
+</div>
+<h3 class="mt-2 text-xl font-bold leading-tight text-primary dark:text-white group-hover:text-primary/70 transition-colors">
+                        Studio Redesign
+                    </h3>
+<p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        Complete brand overhaul and visual identity system for a creative media studio in Los Angeles.
+                    </p>
+<a class="mt-4 flex items-center gap-1 text-sm font-bold text-primary dark:text-slate-300" href="#">
+                        View Case Study
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 6 -->
+<article class="group relative flex flex-col items-start gap-4">
+<div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 transition-all group-hover:shadow-2xl dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Abstract cybersecurity digital matrix pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-KH1D483vFWrbHspshcfZg3PfndzkVWKdBLMgJLtJcRxWHt7PqWkaMZvQCRj-sKMZvg4l1UKloyCdufKttitN1_gOrAE_Y0z-RYG0v9tnOK6HwReOX2JtP1h9feeg4S8RadACliOcuZOnH04FNOZCoF_f1OcyRErq-ByFUOM6Fv-d-fekt5C-KvDEjGOPOyPAVuLWV4mZjN7E-oNs2g1J2PFCMbCvx0z19tdEVDGDG3IvkeukRQM9EnTi3yx74dFpzODeI3QriAo");'>
+</div>
+<div class="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0"></div>
+</div>
+<div class="flex w-full flex-col">
+<div class="flex items-center gap-x-2 text-xs font-semibold uppercase tracking-wider text-primary/60 dark:text-slate-400">
+<span>Python</span>
+<span class="h-1 w-1 rounded-full bg-primary/20 dark:bg-white/20"></span>
+<span>AWS</span>
+</div>
+<h3 class="mt-2 text-xl font-bold leading-tight text-primary dark:text-white group-hover:text-primary/70 transition-colors">
+                        Secure Vault
+                    </h3>
+<p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        Enterprise-grade encrypted storage solution with multi-factor biometric authentication.
+                    </p>
+<a class="mt-4 flex items-center gap-1 text-sm font-bold text-primary dark:text-slate-300" href="#">
+                        View Case Study
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 bg-white py-12 dark:border-slate-800 dark:bg-background-dark">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-white">layers</span>
+<span class="text-xl font-bold text-primary dark:text-white">TGS Portfolio</span>
+</div>
+<p class="mt-4 max-w-sm text-sm text-slate-600 dark:text-slate-400">
+                        Building the future of digital experiences through design-led innovation and engineering excellence.
+                    </p>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary dark:text-white">Company</h4>
+<ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary dark:hover:text-white" href="#">About Us</a></li>
+<li><a class="hover:text-primary dark:hover:text-white" href="#">Careers</a></li>
+<li><a class="hover:text-primary dark:hover:text-white" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary dark:text-white">Social</h4>
+<ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary dark:hover:text-white" href="#">Dribbble</a></li>
+<li><a class="hover:text-primary dark:hover:text-white" href="#">Twitter</a></li>
+<li><a class="hover:text-primary dark:hover:text-white" href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-100 pt-8 dark:border-slate-800">
+<p class="text-xs text-slate-500 dark:text-slate-500">
+                    © 2024 TGS Design Studio. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<div class="fixed bottom-0 z-50 flex w-full border-t border-slate-200 bg-white/90 px-4 pb-4 pt-2 backdrop-blur-md md:hidden dark:border-slate-800 dark:bg-background-dark/90">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary dark:text-white" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-bold">Projects</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">work</span>
+<span class="text-[10px] font-medium">Studio</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] font-medium">Contact</span>
+</a>
+</div>
+</body></html>
